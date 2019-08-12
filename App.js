@@ -69,7 +69,8 @@ export default class App extends React.Component {
 
         }
         }
-        //this.setState({output:l[2]});
+        
+        //this.setState({output:l});
         for(var a=0;a<l.length;a++){
           if(a==0){
               this.state.summ = Number(l[a]);
@@ -92,7 +93,10 @@ export default class App extends React.Component {
         }
     //this.setState({output:l.indexOf("x")});
     this.setState({output:this.state.summ});
+    l=[];
+    //this.setState({output:l});
     this.state.temp = this.state.summ;
+    this.state.num = "";
     }
     else{
       if(n ==0){
