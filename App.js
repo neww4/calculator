@@ -99,15 +99,8 @@ export default class App extends React.Component {
     this.state.num = "";
     }
     else{
-      if(n ==0){
-        if(this.state.temp.length != 0 && this.state.temp[this.state.temp.length-1] != "+" && this.state.temp[this.state.temp.length-1] != "-" && this.state.temp[this.state.temp.length-1] != "x" && this.state.temp[this.state.temp.length-1] != "÷"){
-    this.state.temp = this.state.temp+n;}
-    }
-    else{
       this.state.temp = this.state.temp+n;
-    }
-    this.setState({output:this.state.temp});}
-  }
+    this.setState({output:this.state.temp});}}
   render() {
     return (
 
